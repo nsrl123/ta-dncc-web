@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Akhir</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase fw-bold fs-3 d-flex gap-lg-5">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Reservation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+ 
+    <!-- home section -->
+    <div class="container-xxl">
+        <section class="hero mt-5" id="home">
+            <div class="hero-wrapper d-flex flex-md-row flex-column gap-md-0 gap-5">
+                <img src="img_home.png" alt="home">
+                <div class="hero-content text-md-end px-2 text-center">
+                    <h1 class="hero-title text-uppercase fw-bold fs-md-2 fs-md-4">Moment in every cup</h1>
+                    <p class="hero-desc fs-md-5 fw-semibold">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, voluptates earum. Tempore maiores iure porro.</p>
+                    <button class="hero-button btn text-white fs-5 border-3 border-black border-opacity-50 gap-3 fw-semibold rounded-pill px-md-4 py-md-2">Explore <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="mt-5">
+        <div class="about-wrapper d-flex justify-content-between align-items-center flex-md-row flex-column-reverse">
+            <div class="about-content">
+                <h1 class="about-title text-center text-uppercase fw-bold fs-2 mb-4">About</h1>
+                <p class="about-desc fs-6 px-5 fw-semibold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque natus ea vitae sed, quae est at ab ipsum vero. Ipsum est quisquam quaerat cupiditate non magni quam ex ea at!</p>
+            </div>
+            <img src="img_about.png" alt="about" class="w-md-100 w-75">
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="mt-5">
+        <div class="menu-wrapper">
+            <h1 class="menu-title fs-1 fw-bold text-uppercase text-center mb-4">Menu</h1>
+            <div class="menu-type d-flex gap-5 justify-content-center">
+                <!-- Menu Item Type -->
+                <div class="menu-type-card d-flex flex-column gap-2 align-items-center">
+                    <div class="type-image-wrapper shadow-lg">
+                        <img src="menu_1.png" alt="Hot Drinks">
+                    </div>
+                    <p class="menu-type-desc fw-semibold fs-5">Hot Drinks</p>    
+                </div>
+                <div class="menu-type-card d-flex flex-column gap-2 align-items-center">
+                    <div class="type-image-wrapper shadow-lg">
+                        <img src="menu_2.png" alt="">
+                    </div>
+                    <p class="menu-type-desc fw-semibold fs-5">Cold Drinks</p>    
+                </div>
+                <div class="menu-type-card d-flex flex-column gap-2 align-items-center">
+                    <div class="type-image-wrapper shadow-lg">
+                        <img src="menu_3.png" alt="">
+                    </div>
+                    <p class="menu-type-desc fw-semibold fs-5">Signature</p>    
+                </div>
+                <div class="menu-type-card d-flex flex-column gap-2 align-items-center">
+                    <div class="type-image-wrapper shadow-lg">
+                        <img src="menu_4.png" alt="">
+                    </div>
+                    <p class="menu-type-desc fw-semibold fs-5">Fresh juice</p>    
+                </div>
+                <!-- Other menu items follow similar structure -->
+            </div>
+
+            <div class="menu-card-wrapper mt-5 row row-cols-md-5 row-cols-5 gap-5 justify-content-center">
+                <div class="menu-card py-3 d-flex flex-column align-items-center shadow-lg">
+                    <img src="menu_5.png" alt="coffee">
+                    <div class="menu-card-content d-flex flex-column align-items-center py-1 border-top w-100">
+                        <h1 class="menu-card-title fs-5 fw-bold">Cappuccino</h1>
+                        <p class="menu-card-price fw-semibold">28.000</p>
+                        <button class="py-1 rounded-pill btn btn-sm">Order</button>
+                    </div>
+                </div>
+                <div class="menu-card py-3 d-flex flex-column align-items-center shadow-lg">
+                    <img src="menu_5.png" alt="coffee">
+                    <div class="menu-card-content d-flex flex-column align-items-center py-1 border-top w-100">
+                        <h1 class="menu-card-title fs-5 fw-bold">Cappuccino</h1>
+                        <p class="menu-card-price fw-semibold">28.000</p>
+                        <button class="py-1 rounded-pill btn btn-sm">Order</button>
+                    </div>
+                </div>
+                <div class="menu-card py-3 d-flex flex-column align-items-center shadow-lg">
+                    <img src="menu_5.png" alt="coffee">
+                    <div class="menu-card-content d-flex flex-column align-items-center py-1 border-top w-100">
+                        <h1 class="menu-card-title fs-5 fw-bold">Cappuccino</h1>
+                        <p class="menu-card-price fw-semibold">28.000</p>
+                        <button class="py-1 rounded-pill btn btn-sm">Order</button>
+                    </div>
+                </div>
+                <div class="menu-card py-3 d-flex flex-column align-items-center shadow-lg">
+                    <img src="menu_5.png" alt="coffee">
+                    <div class="menu-card-content d-flex flex-column align-items-center py-1 border-top w-100">
+                        <h1 class="menu-card-title fs-5 fw-bold">Cappuccino</h1>
+                        <p class="menu-card-price fw-semibold">28.000</p>
+                        <button class="py-1 rounded-pill btn btn-sm">Order</button>
+                    </div>
+                </div>
+                <div class="menu-card py-3 d-flex flex-column align-items-center shadow-lg">
+                    <img src="menu_5.png" alt="coffee">
+                    <div class="menu-card-content d-flex flex-column align-items-center py-1 border-top w-100">
+                        <h1 class="menu-card-title fs-5 fw-bold">Cappuccino</h1>
+                        <p class="menu-card-price fw-semibold">28.000</p>
+                        <button class="py-1 rounded-pill btn btn-sm">Order</button>
+                    </div>
+                </div>
+                <div class="menu-card py-3 d-flex flex-column align-items-center shadow-lg">
+                    <img src="menu_5.png" alt="coffee">
+                    <div class="menu-card-content d-flex flex-column align-items-center py-1 border-top w-100">
+                        <h1 class="menu-card-title fs-5 fw-bold">Cappuccino</h1>
+                        <p class="menu-card-price fw-semibold">28.000</p>
+                        <button class="py-1 rounded-pill btn btn-sm">Order</button>
+                    </div>
+                </div>
+                <div class="menu-card py-3 d-flex flex-column align-items-center shadow-lg">
+                    <img src="menu_5.png" alt="coffee">
+                    <div class="menu-card-content d-flex flex-column align-items-center py-1 border-top w-100">
+                        <h1 class="menu-card-title fs-5 fw-bold">Cappuccino</h1>
+                        <p class="menu-card-price fw-semibold">28.000</p>
+                        <button class="py-1 rounded-pill btn btn-sm">Order</button>
+                    </div>
+                </div>
+                <div class="menu-card py-3 d-flex flex-column align-items-center shadow-lg">
+                    <img src="menu_5.png" alt="coffee">
+                    <div class="menu-card-content d-flex flex-column align-items-center py-1 border-top w-100">
+                        <h1 class="menu-card-title fs-5 fw-bold">Cappuccino</h1>
+                        <p class="menu-card-price fw-semibold">28.000</p>
+                        <button class="py-1 rounded-pill btn btn-sm">Order</button>
+                    </div>
+                </div>
+            </div>
+
+          </section>
+          <!-- menu section -->
+          <section id="menu"  class="mt-5">
+          </section>
+          
+          <!-- reservation section -->
+          <section id="reservation" class="mt-5 mb-5 w-100"> 
+            <div class="d-flex flex-column align-items-center  w-md-75 w-auto px-5 # ">
+            
+            <h1 class="reservation-title fs-1 fw-bold text-uppercase text-center mb-3">Reservation</h1>
+            <div class="reservation-from w-100">
+              
+            <label for="exampleFormControlInput1" class="form-label fw-bold fs-md-4">Nama</label>
+              
+            <div class="nama-from d-flex gap-md-5 gap-1">
+              <input type="text" 
+              class="form-control shadow-lg" 
+              id="exampleFormControlInput1" 
+              placeholder="Depan">
+
+              <input type="text" 
+              class="form-control shadow-lg" 
+              id="exampleFormControlInput1" 
+              placeholder="Belakang">
+            </div>
+            <div class="email-from mb-3">
+              <div class="email-from-wrapper d-flex gap-md-5 gap-1">
+                <div class="w-100">
+                  <label for="exampleFormControlInput1" class="form-label fs-md-4 fw-bold ">Email</label> 
+                  <input type="email" 
+                  class="form-control shadow-lg" 
+                  id="exampleFormControlInput1" 
+                  placeholder="Cnth: nama@gmail.com">
+                </div>
+                <div class="w-100">
+                  <label for="exampleFormControlInput1" class="form-label fs-md-4 fw-bold ">No. Headphone</label> 
+                  <input type="text" 
+                  class="form-control shadow-lg" 
+                  id="exampleFormControlInput1" 
+                  placeholder="08#########">
+                </div>
+              </div>
+            </div>
+            <div class="email-from mb-3">
+              <div class="email-from-wrapper d-flex gap-md-5 gap-1">
+                <div class="w-100">
+                  <label for="exampleFormControlInput1" class="form-label fs-md-4 fw-bold ">Tanggal Reservasi</label> 
+                  <input type="date" 
+                  class="form-control shadow-lg" 
+                  id="exampleFormControlInput1" 
+                  placeholder="Depan">
+                </div>
+                <div class="w-100">
+                  <label for="exampleFormControlInput1" class="form-label fs-md-4 fw-bold ">Waktu Reservarsi</label> 
+                  <input type="time" 
+                  class="form-control shadow-lg" 
+                  id="exampleFormControlInput1" 
+                  placeholder="Depan">
+                </div>
+              </div>
+            </div>
+            <div class="total-from mb-3">
+              <div class="email-from-wrapper d-flex gap-md-5 gap-1">
+                <div class="w-100">
+                  <label for="exampleFormControlInput1" class="form-label fs-md-4 fw-bold ">Untuk Berapa Orang</label> 
+                  <input type="number" 
+                  class="form-control shadow-lg" 
+                  id="exampleFormControlInput1" 
+                  placeholder="Please Select">
+                </div>
+              </div>
+            </div>
+            <div class="total-from mb-3">
+              <div class="email-from-wrapper d-flex gap-md-5 gap-1">
+                <div class="w-100">
+                  <label for="exampleFormControlInput1" class="form-label fs-md-4 fw-bold ">Catatan</label> 
+                   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"placeholder="tuliskan disini"></textarea>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <button class="reservation-button btn btn-sm rounded-pill border-2 w-50 mt-2 py-2 text-white ">Reserversi Sekarang</button>
+            </div>
+          </section>
+<!-- contact section -->
+ <section id="contact" class="mt-5">
+  <div class="contact-wrapper d-flex gap-5 flex-md-row flex-column">
+    <img src="img_contact.png" alt="contact">
+     
+    <div class="contact-content text-md-end">
+      <h1 class="contact-title fs-1 fw-bold text-uppercase">Contact Us</h1>
+      <p class="contact-desc fs-5 fw-semibold px-2 py-md-2">Ada pertanyaan atau ingin pendapat? <br><span>Silahkan hubungi kami</span></p>
+      <button class="contact-button border-2 rounded-pill btn text-white fw-bold">Contact Us <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+    </div>
+  </div>
+ </section>
+
+ <section class="mt-5">
+  <!-- Footer -->
+  <footer class="bg-body-tertiary text-center text-md-start">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <img src="logo.png" alt="logo">
+         <div class="social-media">
+          <img src="lg_fb.png" alt="fb">
+          <img src="lg_insta.png" alt="ig">
+          <img src="lg_twt.png" alt="twt">
+         </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Quick link</h5>
+
+          <ul class="list-unstyled mb-0 fst-italic ">
+            <li>
+              <a href="#!" class="text-body">Home</a>
+            </li>
+            <li>
+              <a href="#!" class="text-body">About Us</a>
+            </li>
+            <li>
+              <a href="#!" class="text-body">Reservation</a>
+            </li>
+            <li>
+              <a href="#!" class="text-body">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-0 fw-bold">Contact</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <img src="Email.png" alt="">
+              <a href="#!" class="text-body text-decoration-none">nasrul@gmail.com</a>
+            </li>
+            <li>             
+              <img src="Phone.png" alt="">
+              <a href="#!" class="text-body text-decoration-none">082324169167</a>
+            </li>
+            <li>             
+             <img src="Location.png" alt="">
+              <a href="#!" class="text-body text-decoration-none">wonosalam,demak,jawa tengah</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2024 Diens All Rights
+      <a class="text-body" href="https://mdbootstrap.com/">web.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</section>
+
+        </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

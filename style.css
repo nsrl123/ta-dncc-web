@@ -1,0 +1,90 @@
+:root {
+  --primary: #406f73;
+  --secondary: #79d1d9;
+  --neutral: #d2a4b0;
+  --accent: #ffdce5;
+}
+
+* {
+  font-family: "Josefin Sans";
+}
+
+.container-xxl {
+  margin-top: 3rem;
+}
+
+.about-wrapper {
+  gap: 2rem;
+}
+
+.hero-button {
+  background: linear-gradient(to bottom, var(--primary), var(--secondary));
+}
+
+.about-desc {
+  text-align: justify;
+}
+
+.type-image-wrapper {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.type-image-wrapper img {
+  width: 75%;
+}
+
+.menu-type-card p {
+  font-size: 1rem;
+}
+.menu-card {
+  border-radius: 0.5rem;
+}
+.type-image-wrapper {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.menu-card-content button {
+  width: 75%;
+  background: linear-gradient(to bottom, var(--primary), var(--secondary));
+  color: white;
+}
+.contact-button {
+    background: linear-gradient(to bottom, var(--neutral), var(--accent));
+
+}
+#reservation {
+  background-color: #e4e4e459;
+  padding: 5rem;
+  border-radius: 1rem;
+}
+.reservation-button {
+    background: linear-gradient(to bottom, var(--neutral), var(--accent));
+
+}
+.navbar-active {
+    box-shadow: 0px -4px 4px 0px rgba(64, 111, 115, 0.4) inset;
+    backdrop-filter: blur(30px) ;
+}
+
+@media screen and (min-width: 768px) {
+  .about-wrapper {
+    gap: 10rem;
+  }
+  .type-image-wrapper img {
+    width: 100%;
+  }
+}
